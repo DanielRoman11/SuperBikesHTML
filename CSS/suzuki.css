@@ -1,0 +1,14 @@
+.Suzuki{
+    border: 1px;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    list-style-type: none;
+    list-style: none;
+}
+.Usuarios{
+    list-style-type: none;
+    list-style: none
+}

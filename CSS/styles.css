@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*padding: 90px 20px 0;*/
+    /*El padding evita que el contenido se salga
+    para usar la animación con el fondo hay que
+    modificar el padding*/
+}
+.header{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 10;
+    transition: 0.7s;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 992px;
+    margin: 0 auto;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    transition: 1.5s;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+    transition: 0.7s;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    transition: 0.5s;
+}
+.nav-menu-link:hover{
+    text-shadow: 2px 2px #999;
+    color: whitesmoke;
+}
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+.abajo{
+    background-color: whitesmoke;
+}
+.abajo .logo,
+.abajo .nav-menu-link{
+    color: black;
+}
+.abajo .nav-toggle{
+    color: black;
+}
+.container{
+    padding: 90px 20px 0;
+}
+.principal{
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0;
+}
+.principal .card{
+    border: none;
+}
+.footer{
+    width: 100%;
+    position: unset;
+    bottom: 0;
+    left: 0;
+    padding: 3rem 1rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.brands-websites, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.brand-icon{
+    height:50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background-image: url(../imágenes/motorcycle.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.brand-icon:hover{
+    background-color: black;
+    filter: invert(1);
+}
+.brand-icon:nth-of-type(2){
+    background-image:url(#);
+}
+.brand-icon:nth-of-type(3){
+    background-image:url(#);
+}
+.footer-menu-container{
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 10px;
+}
+.menu-item{
+    margin: 2rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
+.copyright{
+    color: whitesmoke;
+    opacity: 0.3;
+    text-align: center;
+}
+
+.usuarios {
+    padding: 90px 20px 0;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+}
+#text_footer{
+    color: white;
+}
+#map{
+    height: 400px;
+    width: 500px;
+}
+
+@media (max-width: 950px){
+    .header{
+        height: 60px;
+    }
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #999;
+        opacity: 0.78;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20 0px;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item{
+        line-height: 60px;        
+    }
+    .nav-menu-link:hover{
+        background: none;
+        transition: 0.5s;
+    }
+    .abajo{
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-menu_visible{
+        left: 0;
+    }
+}
