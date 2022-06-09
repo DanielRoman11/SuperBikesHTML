@@ -11,6 +11,13 @@ body{
     para usar la animación con el fondo hay que
     modificar el padding*/
 }
+main{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 15%;
+    display: flex;
+    margin: auto;
+}
 .header{
     height: 80px;
     position: fixed;

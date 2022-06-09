@@ -80,12 +80,15 @@ body{
     color: black;
 }
 .container{
-    padding: 90px 20px 0;
+    padding: 90px 100px 0;
 }
 .principal{
     align-items: center;
     justify-content: center;
-    padding: 90px 0;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
 }
 .principal .card{
     border: none;
@@ -93,9 +96,11 @@ body{
 footer{
     position: relative;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: #3586ff;
     min-height: 100px;
-    padding: 20px 50px;
+    padding-top: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,8 +148,9 @@ footer p{
 }
 footer .wave{
     position: absolute;
-    top: -100px;
+    top: -50px;
     left: 0;
+    opacity: 1;
     width: 100%;
     height: 100px;
     background: url(../imágenes/wave.png);
@@ -154,13 +160,13 @@ footer .wave#wave1{
     z-index: 1000;
     opacity: 1;
     bottom: 10px;
-    animation: animateWave 4s linear infinite;
+    animation: animateWave 3s linear infinite;
 }
 footer .wave#wave2{
-    z-index: 999;
-    opacity: 0.5;
+    z-index: 900;
+    opacity: 0.8;
     bottom: 10px;
-    animation: animateWave_02 4s linear infinite;
+    animation: animateWave_02 10s linear infinite;
 }
 footer .wave#wave3{
     z-index: 1000;
@@ -170,7 +176,7 @@ footer .wave#wave3{
 }
 footer .wave#wave4{
     z-index: 999;
-    opacity: 0.2;
+    opacity: 0.5;
     bottom: 20px;
     animation: animateWave_04 4s linear infinite;
 }
@@ -216,10 +222,14 @@ footer .wave#wave4{
 }
 
 .usuarios {
-    padding: 90px 20px 0;
-    margin: 0;
-    height: 50px;
-    width: 50px;
+    padding-bottom: 50%;
+    padding-top: 50%;
+    margin-bottom: 100%;
+    height: 200px;
+    width: fit-content;
+}
+.usuarios ul li{
+    list-style: none;
 }
 #text_footer{
     color: white;
