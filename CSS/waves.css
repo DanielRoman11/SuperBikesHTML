@@ -32,11 +32,15 @@ body{
     text-decoration: none;
 }
 .logo{
+    color: #ffd700;
     font-size: 40px;
     font-weight: bold;
     padding: 0 40px;
     line-height: 80px;
-    transition: 1.5s;
+    transition: 0.7s;
+}
+.logo:hover{
+    color: black;
 }
 .nav-menu{
     display: flex;
@@ -48,7 +52,7 @@ body{
     margin: 0 20px;
     line-height: 80px;
     text-transform: uppercase;
-    width: max-content;
+    width: fit-content;
     transition: 0.7s;
 }
 .nav-menu-link{
@@ -70,11 +74,18 @@ body{
     display: none;
 }
 .abajo{
-    background-color: whitesmoke;
+    background: rgb(255, 255, 255);
 }
 .abajo .logo,
 .abajo .nav-menu-link{
-    color: black;
+    color: gold;
+}
+.abajo .nav-menu-link-nav-link{
+    color:rgb(0,0,0);
+}
+.abajo .nav-menu-link-nav-link:hover{
+    color: blue;
+    text-shadow: 2px 2px rgb(0,0,0);
 }
 .abajo .nav-toggle{
     color: black;
@@ -83,6 +94,7 @@ body{
     padding: 90px 100px 0;
 }
 .principal{
+    background:linear-gradient(45deg,rgb(255, 255, 255)25%,rgb(236, 161, 48)50%,rgb(255, 255, 255)75%);
     align-items: center;
     justify-content: center;
     padding-top: 5%;
@@ -106,25 +118,19 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-.social-icon, .menu{
-    position: relative;
+.menu{
     display: flex;
-    justify-content: center;
+    width: fit-content;
+    justify-content: space-between;
     align-items: center;
-    margin:10px 0; 
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
-.social-icon li, .menu li{
+.menu li{
+    justify-content: space-between;
     list-style: none;
+    
 }
-.social-icon li a{
-    font-size: 2em;
-    color: whitesmoke;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-}
-.menu li a{
+.nav-menu-link-nav-link{
     font-size: 1.2em;
     color: whitesmoke;
     margin: 0 10px;
@@ -135,7 +141,7 @@ footer{
 .social-icon li a:hover{
     transform: translateY(-10px);
 }
-.menu li a:hover{
+.nav-menu-link-nav-linka:hover{
     opacity: 1;
     color:white;
 }
@@ -157,25 +163,25 @@ footer .wave{
     background-size: 1000px 100px;
 }
 footer .wave#wave1{
-    z-index: 1000;
+    z-index: 9;
     opacity: 1;
     bottom: 10px;
     animation: animateWave 3s linear infinite;
 }
 footer .wave#wave2{
-    z-index: 900;
+    z-index: 8;
     opacity: 0.8;
     bottom: 10px;
     animation: animateWave_02 10s linear infinite;
 }
 footer .wave#wave3{
-    z-index: 1000;
+    z-index: 9;
     opacity: 0.7;
     bottom: 20px;
     animation: animateWave_03 4s linear infinite;
 }
 footer .wave#wave4{
-    z-index: 999;
+    z-index: 9.5;
     opacity: 0.5;
     bottom: 20px;
     animation: animateWave_04 4s linear infinite;
@@ -269,8 +275,12 @@ footer .wave#wave4{
     .nav-menu-item{
         line-height: 60px;        
     }
+    .nav-menu-link{
+        text-shadow: rgb(0,0,0);
+    }
     .nav-menu-link:hover{
         background: none;
+        color: rgb(0,0,0);
         transition: 0.5s;
     }
     .abajo{

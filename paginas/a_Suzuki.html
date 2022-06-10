@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUZUKI</title>
     <script src="https://kit.fontawesome.com/cef1d5af15.js" crossorigin="anonymous"></script>
-    <script defer src="../Js/index.js"></script>
-    <script src="../Js/suzuki.js" type="module"></script>
-    <script src="../Js/usuarios.js" type="module"></script>
+    <script defer src="../Js/index.js"></script>    
+    <script src="../Js/api.js" type="module"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/waves.css">
     <link rel="stylesheet" type="text/css" href="../CSS/suzuki.css">
@@ -19,10 +18,10 @@
             <a href="../index.html" class="logo nav-link" title="bike icons">SUPERBIKES</a>
             <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Inicio</a></li>
-                <li class="nav-menu-item"><a href="../paginas/a_Suzuki.html" class="nav-menu-link nav-link">Suzuki</a></li>
-                <li class="nav-menu-item"><a href="../paginas/a_Honda.html" class="nav-menu-link nav-link">Honda</a></li>
-                <li class="nav-menu-item"><a href="../paginas/a_Kawasaki.html" class="nav-menu-link nav-link">Kawasaki</a></li>
+                <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link-nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="../paginas/a_Suzuki.html" class="nav-menu-link-nav-link">Suzuki</a></li>
+                <li class="nav-menu-item"><a href="../paginas/a_Honda.html" class="nav-menu-link-nav-link">Honda</a></li>
+                <li class="nav-menu-item"><a href="../paginas/a_Kawasaki.html" class="nav-menu-link-nav-link">Kawasaki</a></li>
             </ul>
         </nav>
     </header>
@@ -128,7 +127,6 @@
                     <div class="card-body">
                         <h4 class="card-title">2005</h4>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio expedita necessitatibus iste mollitia, enim minus quaerat dignissimos repudiandae dicta assumenda beatae fuga. Ipsa porro fugiat corporis dolore qui non vel nisi, ut repellendus magnam harum quia odit, quod incidunt neque nihil sint suscipit est explicabo et enim maiores consequatur in? Pariatur perspiciatis ab quam ratione aut nesciunt odit rerum nulla, architecto molestiae aliquam veniam velit incidunt dolores hic optio vero blanditiis fuga labore debitis possimus cumque facere est accusamus. Dolor perferendis aut rem quo? Illo similique fuga voluptas, praesentium explicabo aliquam voluptate ipsam ex itaque, perferendis pariatur. Sint fugit dolor doloremque delectus nostrum consectetur cum eaque, possimus voluptate consequatur nisi illo placeat sunt velit architecto est ut eos corrupti culpa nulla enim quidem porro sit eum! Placeat molestias soluta doloribus iste illum autem odit, voluptas labore adipisci animi cumque quo velit! Odit veritatis error, neque minus tempore repellat quam aliquid fugit est necessitatibus, incidunt beatae corporis cumque impedit aliquam debitis quo. Assumenda, et! Officia, omnis aperiam ex facilis unde aliquam architecto? Velit laudantium fugiat voluptate, ex perspiciatis nulla dicta repudiandae.</p>
-                        
                     </div>
                 </div>
             </div>
@@ -164,23 +162,28 @@
         <div id="productoSuzuki"></div> 
     </div>
     <!-- FOOTER DE LA PÁGINA-->
-    <footer class="footer">
-        <a href="../index.html" class="logo nav-link" title="bike icons">SUPERBIKES</a>
-        <div class="brands-websites">
-            <a href="../imágenes/png-transparent-kawasaki-motorcycles-kawasaki-heavy-industries-sticker-decal-motorcycle.png" class="brand-icon"></a>
-            <a href="../imágenes/Honda_blanco.png" class="brand-icon"></a>
-            <a href="../imágenes/suzuki-blanco.png" class="brand-icon"></a>
+    <footer>
+        <div class="wave">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
         </div>
-        <ul class="footer-menu-container">
-            <li class="menu-items">Legal</li>
-            <li class="menu-items">Cookies</li>
-            <li class="menu-items">Privacidad</li>
+        <ul class="menu">
+            <li><a href="../paginas/a_Suzuki.html">Suzuki</a></li>
+            <li><a href="../paginas/a_Honda.html">Honda</a></li>
+            <li><a href="../paginas/a_Kawasaki.html">Kawasaki</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
+        
         <p id="text_footer">
-            Ubicación de la sede principal de Suzuki:
+            Ubicación de la sede principal del bloc:
         </p>
-          <div id="map"></div>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        <div id="map"></div>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
         <span class="copyright">&copy;2022, Daniel Ordoñez Román. Todos los derechos reservados</span>
     </footer>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
