@@ -34,7 +34,7 @@ body{
     margin: 0 auto;
 }
 .nav-link{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .logo{
@@ -66,7 +66,7 @@ body{
     color: whitesmoke;
 }
 .nav-toggle{
-    color: white;
+    color: rgb(255, 255, 255);
     background: none;
     border: none;
     font-size: 30px;
@@ -115,12 +115,16 @@ main{
     padding: auto;
 }
 form{
+    text-align:center;
     justify-content: center;
     margin: 0 auto;
     border-style: outset;
     padding: 10px;
     width: fit-content;
     display: flex;
+}
+.inline{
+    width: unset;
 }
 fieldset{
     justify-content: center;

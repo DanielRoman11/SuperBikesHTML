@@ -2,16 +2,15 @@ body{
     width:100%;
     height: 100vh;
     margin: 0 auto;
-    background: black url(../imágenes/patrones.jpg);
-    background-attachment: fixed;
-    background-size: 400px 10px;
+    background: #D9FB85;
     color:#BFBFBF;
 }
 fieldset{
-    background: #10403B;
+    background: #64801D;
+    opacity: 0.3;
 }
 .etiqueta{
     display:block;
     margin:0.5rem 0;
-
+    opacity:1;
 }
