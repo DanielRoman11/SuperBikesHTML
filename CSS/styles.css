@@ -5,17 +5,6 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    /*padding: 90px 20px 0;*/
-    /*El padding evita que el contenido se salga
-    para usar la animación con el fondo hay que
-    modificar el padding*/
-}
-
-.carousel-caption p{
-    text-shadow: 0px 1px 3px rgb(255, 255, 255);
-}
-.carousel-caption h5{
-    text-shadow: 0px 2px 3px rgb(255, 255, 255);
 }
 .header{
     height: 80px;
@@ -43,6 +32,11 @@ body{
     padding: 0 40px;
     line-height: 80px;
     transition: 1.5s;
+    text-shadow: 2px 2px 2px rgb(0,0,0);    
+}
+.logo:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(255, 128, 0);
 }
 .nav-menu{
     display: flex;
@@ -62,11 +56,12 @@ body{
     transition: 0.5s;
 }
 .nav-menu-link:hover{
-    text-shadow: 2px 2px #999;
-    color: whitesmoke;
+    text-shadow: 2px 2px #999999;
+    color: #f5f5f5; 
 }
 .nav-toggle{
     color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0,0,0);
     background: none;
     border: none;
     font-size: 30px;
@@ -76,14 +71,20 @@ body{
     display: none;
 }
 .abajo{
-    background-color: whitesmoke;
+    background: linear-gradient(to left,rgba(255,255,255,1) 10%,rgba(255,255,255,.75) 30%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0)70%);
 }
 .abajo .logo,
 .abajo .nav-menu-link{
-    color: black;
+    color: rgb(255, 128, 0);
+}
+.abajo .logo{
+    text-shadow: 2px 2px 2px rgb(36, 34, 34);
+}
+.abajo .nav-menu-link{
+    text-transform: uppercase;
 }
 .abajo .nav-toggle{
-    color: black;
+    color: rgb(255, 128, 0);
 }
 
 .principal{
@@ -93,6 +94,17 @@ body{
 }
 .principal .card{
     border: none;
+}
+.carousel-p{
+    
+    border-radius: 15px 30px 70px 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.carousel-caption p{
+    text-shadow: 0px 1px 3px rgb(255, 255, 255);
+}
+.carousel-caption h5{
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
 }
 main{
     background: linear-gradient(45deg,rgb(0,0,0),rgb(53, 52, 52),rgb(0,0,0));
@@ -110,53 +122,44 @@ main{
     padding:20px;
     margin: 0 auto;
 }
-.formulario{
-    margin: 0 auto;
-    padding: auto;
-}
-form{
-    text-align:center;
-    justify-content: center;
-    margin: 0 auto;
-    border-style: outset;
-    padding: 10px;
-    width: fit-content;
-    display: flex;
-}
-.inline{
-    width: unset;
-}
-fieldset{
-    justify-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    display: felx;
-    align-items: center;
-    width: fit-content;
-    border: 1px solid rgb(255, 255, 255);
-}
-legend{
-    font-size: larger;
-    padding: 10px;
-}
-label{
-    display: block;
-    margin: 0 auto;
-    padding: auto;
-
-}
 .footer{
     width: 100%;
-    position: unset;
-    bottom: 0;
-    left: 0;
+    max-width: 100%;
     padding: 3rem 1rem;
-    background-color: black;
+    background-color: rgb(0,0,0);
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+@media (max-width: 330px) {
+    a.logo.nav-link{
+        font-size: 15px;
+    }
+    .footer #map{
+        max-width: 200px;
+    }
+    .footer{
+        padding: 2px 2px;
+    }
+}
+@media (max-width: 400px){
+    .footer{
+        padding: 5px 5px;
+    }
+    .footer #map{
+        width: 200px;
+    }
+}
+@media (max-width: 600px){
+    .footer #map{
+        margin: 10px auto;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+}
+
 .brands-websites, .footer-menu-container{
     display: flex;
     justify-content: center;
@@ -168,7 +171,7 @@ label{
     height:50px;
     width: 50px;
     border-radius: 50px;
-    border: 1px solid whitesmoke;
+    border: 1px solid grey;
     background-image: url(../imágenes/motorcycle.png);
     background-position: center;
     background-size: 40%;
@@ -230,24 +233,28 @@ label{
     }
     .nav-menu{
         flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: #999;
-        opacity: 0.78;
+        align-items: flex-end;
+        background-color: rgb(0,0,0);
+        opacity: 0.8;
         position: fixed;
-        left: 0;
+        border-radius: 10px;
         top: 60px;
-        width: 100%;
-        padding: 20 0px;
-
-        height: calc(100% - 60px);
+        padding: 10px 0px;
         overflow-y: auto;
-
-        left: 100%;
-        transition: left 0.3s;
+        right: -100%;
+        transition: right 0.4s;
     }
     .nav-menu-item{
         line-height: 60px;        
+    }
+    .nav-menu-link{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    a.nav-menu-link.nav-link{
+        color: #FFFFFF;
+    }
+    .abajo a.nav-menu-link.nav-link{
+        color: #ff8000;
     }
     .nav-menu-link:hover{
         background: none;
@@ -257,11 +264,12 @@ label{
         padding: 0 20px;
         line-height: 60px;
     }
+    
     .nav-toggle{
         display: block;
     }
     .nav-menu_visible{
-        left: 0;
+        right: -5%;
     }
     form{
         display: contents;
@@ -275,5 +283,10 @@ label{
     input{
         margin: 20px;
         align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .nav-menu_visible{
+        right: -10%;
     }
 }

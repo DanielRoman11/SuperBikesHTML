@@ -40,7 +40,8 @@ body{
     transition: 0.7s;
 }
 .logo:hover{
-    text-shadow: 2px 2px 2px #FF8000;
+    text-shadow: 2px 2px 2px #ff0000;
+    color:rgb(255, 255, 255);
 }
 .nav-menu{
     display: flex;
@@ -79,7 +80,7 @@ body{
 }
 .abajo .logo,
 .abajo .nav-menu-link{
-    color: #FF8000;
+    color: #ff0000;
 }
 .abajo .nav-menu-link-nav-link{
     color:rgb(0,0,0);
